@@ -26,7 +26,7 @@ describe('/api/genres', () => {
       expect(res.status).toBe(200);
       expect(res.body.length).toBe(2);
       expect(res.body.some(g => g.name === 'genre1')).toBeTruthy();
-      expect(res.body.some(g => g.name === 'genre2')).toBeTruthy();
+      expect(res.body.some(g => g.name === 'genre2')).toBeTruthy();  // res array olduğu için some kullandı
     });
   });
 
